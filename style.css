@@ -1,0 +1,147 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+body {
+    font-family: 'League Spartan', sans-serif;
+}
+main {
+    width: 100%;
+    height: 100vh;
+    background-color: hsl(0, 0%, 100%);
+}
+main .container {
+    padding: 100px;
+}
+@media (max-width: 767px) {
+    main .container {
+        padding: 50px;
+    }
+}
+main .container .head {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin-bottom: 60px;
+}
+@media (max-width: 767px) {
+    main .container .head {
+        flex-direction: column;
+        margin-bottom: 30px;
+        text-align: center;
+    }
+}
+main .container .head .info {
+    flex-basis: 32%;
+}
+main .container .head .info .title {
+    font-size: 40px;
+    font-weight: 700;
+    color: hsl(300, 43%, 22%);
+    line-height: 0.8;
+}
+main .container .head .info .details {
+    font-size: 15px;
+    font-weight: 500;
+    color: hsl(303, 10%, 53%);
+    line-height: 1.2;
+    margin-top: 20px;
+}
+main .container .head .ranks {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+main .container .head .ranks .rank {
+    width: 350px;
+    padding: 15px 20px;
+    margin-bottom: 15px;
+    background-color: hsl(300, 24%, 96%);
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+}
+@media (max-width: 767px) {
+    main .container .head .ranks .rank {
+        width: 250px;
+        flex-direction: column;
+    }
+}
+main .container .head .ranks .rank.guru {
+    transform: translatex(-50px)
+}
+@media (max-width: 767px) {
+    main .container .head .ranks .rank.guru {
+        transform: translatex(0px);
+    }
+}
+main .container .head .ranks .rank.review {
+    transform: translatex(-100px)
+}
+@media (max-width: 767px) {
+    main .container .head .ranks .rank.rank.review {
+        transform: translatex(0px);
+    }
+}
+main .container .head .ranks .rank .stars {
+    margin-right: 25px;
+}
+@media (max-width: 767px) {
+    main .container .head .ranks .rank .stars {
+        margin-bottom: 10px;
+    }
+}
+main .container .head .ranks .rank .stars .star {
+    margin-right: 3px;
+}
+main .container .head .ranks .rank .rate {
+    font-size: 15px;
+    font-weight: 700;
+    color: hsl(300, 43%, 22%);
+}
+main .container .bottom {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 30px;
+}
+main .container .bottom .box {
+    padding: 40px;
+    background-color: hsl(300, 43%, 22%);
+    border-radius: 10px;
+}
+main .container .bottom .box.irene {
+    transform: translatey(20px);
+}
+main .container .bottom .box.anne {
+    transform: translatey(40px);
+}
+main .container .bottom .box .content {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+main .container .bottom .box .content .person {
+    width: 30px;
+    height: 30px;
+    margin-right: 20px;
+    border-radius: 50%;
+}
+main .container .bottom .box .content .tag .name {
+    font-size: 15px;
+    font-weight: 700;
+    color: hsl(300, 24%, 96%);
+}
+main .container .bottom .box .content .tag .buyer {
+    display: block;
+    font-size: 14px;
+    font-weight: 400;
+    color:  hsl(333, 80%, 67%);
+    margin-top: 5px;
+}
+main .container .bottom .box .quote {
+    font-size: 14px;
+    font-weight: 400;
+    color: hsl(300, 24%, 96%);
+    line-height: 1.3;
+}
